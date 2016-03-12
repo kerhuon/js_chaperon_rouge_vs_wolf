@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeu de plateau Nico</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+</head>
+<body>
+
+<div id="plateau">
+    <h1>Jeu de plateau</h1>
+      
+        <div class="legende flex-container">
+          <span id="nom"><img src="images/gentil.jpg" alt="user" class="avatar"></span>
+          
+          <span id="vie">
+              <div class="badge-container">
+                <img src="images/coeur.png" alt="Vie" class="avatar">
+                <div class="badge badge-green">100</div>
+              </div>
+          </span>
+
+          <span id="attaque">
+            <div class="badge-container">
+                <img src="images/hache.png" alt="Vie" class="avatar">
+                <div class="badge badge-red">20</div>
+            </div>
+          </span>
+          
+          <span id="defense">
+            <div class="badge-container bouclier">
+                <img src="images/bouclier.jpg" alt="Vie" class="avatar">
+                <div class="badge badge-green">OUI</div>
+            </div>
+          </span>
+          
+          <span class="btn-treehouse">Restart</span>
+
+        </div>
+      
+
+    <div class="tabs">
+      <span class="tab"><p id="case1"></p></span>
+      <span class="tab"><p id="case2"></p></span>
+      <span class="tab"><p id="case3"></p></span>
+      <span class="tab"><p id="case4"></p></span>
+      <span class="tab"><p id="case5"></p></span>
+      <span class="tab"><p id="case6"></p></span>
+      <span class="tab"><p id="case7"></p></span>
+      <span class="tab"><p id="case8"></p></span>
+      <span class="tab"><p id="case9"></p></span>
+      <span class="tab"><p id="case10"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case11"></p></span>
+      <span class="tab"><p id="case12"></p></span>
+      <span class="tab"><p id="case13"></p></span>
+      <span class="tab"><p id="case14"></p></span>
+      <span class="tab"><p id="case15"></p></span>
+      <span class="tab"><p id="case16"></p></span>
+      <span class="tab"><p id="case17"></p></span>
+      <span class="tab"><p id="case18"></p></span>
+      <span class="tab"><p id="case19"></p></span>
+      <span class="tab"><p id="case20"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case21"></p></span>
+      <span class="tab"><p id="case22"></p></span>
+      <span class="tab"><p id="case23"></p></span>
+      <span class="tab ok"><p id="case24"></p></span>
+      <span class="tab ok"><p id="case25"></p></span>
+      <span class="tab ok"><p id="case26"></p></span>
+      <span class="tab"><p id="case27"><img class="image-personnage" src="images/gentil.jpg" alt="Gentil"></p></span>
+      <span class="tab ok"><p id="case28"></p></span>
+      <span class="ok tab"><p id="case29"></p></span>
+      <span class="tab ok"><p id="case30"><img class="image-personnage" src="images/pistolet.png" alt=""></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case31"></p></span>
+      <span class="tab"><p id="case32"></p></span>
+      <span class="tab"><p id="case33"></p></span>
+      <span class="tab"><p id="case34"></p></span>
+      <span class="tab pierre"><p id="case35"></p></span>
+      <span class="tab"><p id="case36"></p></span>
+      <span class="tab"><p id="case37"></p></span>
+      <span class="tab"><p id="case38"></p></span>
+      <span class="tab"><p id="case39"></p></span>
+      <span class="tab"><p id="case40"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case41"></p></span>
+      <span class="tab"><p id="case42"></p></span>
+      <span class="tab"><p id="case43"></p></span>
+      <span class="tab"><p id="case44"></p></span>
+      <span class="tab"><p id="case45"></p></span>
+      <span class="tab"><p id="case46"></p></span>
+      <span class="tab"><p id="case47"><img class="image-personnage" src="images/hache.png" alt=""></p></span>
+      <span class="tab"><p id="case48"></p></span>
+      <span class="tab"><p id="case49"></p></span>
+      <span class="tab"><p id="case50"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case51"></p></span>
+      <span class="tab"><p id="case52"></p></span>
+      <span class="tab"><p id="case53"><img class="image-personnage" src="images/mechant.jpg" alt="Méchant"></p></span>
+      <span class="tab"><p id="case54"></p></span>
+      <span class="tab"><p id="case55"></p></span>
+      <span class="tab"><p id="case56"><img class="image-personnage" src="images/pistolet.png" alt=""></p></span>
+      <span class="tab"><p id="case57"></p></span>
+      <span class="tab"><p id="case58"></p></span>
+      <span class="tab"><p id="case59"></p></span>
+      <span class="tab"><p id="case60"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case61"></p></span>
+      <span class="tab"><p id="case62"><img class="image-personnage" src="images/pistolet.png" alt=""></p></span>
+      <span class="tab"><p id="case63"></p></span>
+      <span class="tab"><p id="case64"></p></span>
+      <span class="tab"><p id="case65"></p></span>
+      <span class="tab"><p id="case66"></p></span>
+      <span class="tab"><p id="case67"></p></span>
+      <span class="tab"><p id="case68"></p></span>
+      <span class="tab"><p id="case69"></p></span>
+      <span class="tab"><p id="case70"></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case71"></p></span>
+      <span class="tab"><p id="case72"></p></span>
+      <span class="tab"><p id="case73"></p></span>
+      <span class="tab"><p id="case74"></p></span>
+      <span class="tab"><p id="case75"></p></span>
+      <span class="tab"><p id="case76"></p></span>
+      <span class="tab"><p id="case77"></p></span>
+      <span class="tab"><p id="case78"></p></span>
+      <span class="tab"><p id="case79"></p></span>
+      <span class="tab"><p id="case80"><img class="image-personnage" src="images/fusil.png" alt=""></p></span>
+    </div>
+
+    <div class="tabs">
+      <span class="tab"><p id="case81"></p></span>
+      <span class="tab"><p id="case82"></p></span>
+      <span class="tab"><p id="case83"></p></span>
+      <span class="tab"><p id="case84"></p></span>
+      <span class="tab"><p id="case85"></p></span>
+      <span class="tab"><p id="case86"></p></span>
+      <span class="tab"><p id="case87"></p></span>
+      <span class="tab"><p id="case88"></p></span>
+      <span class="tab"><p id="case89"></p></span>
+      <span class="tab"><p id="case90"></p></span>
+    </div>
+
+</div>
+
+
+
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
