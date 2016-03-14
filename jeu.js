@@ -11,7 +11,7 @@ var Position = {
 	},
 
 	donneId: function(){
-		return String(this.ligne*10+this.colonne+1);
+		return 'case' + String(this.ligne*10+this.colonne+1);
 	}
 
 }
