@@ -21,7 +21,7 @@ var Position = {
 
 
 //Fonction déplacer joueur
-moveJoueur = function(position_initiale, position_finale, type_joueur){
+bougerPositionJoueur = function(position_initiale, position_finale, type_joueur){
 	var id_initial = position_initiale.donneId();
 	var id_final = position_finale.donneId();
 	$(id_initial).html('');
@@ -39,6 +39,38 @@ positionToId = function(position){
 
 }
 
+bougerIdJoueur = function(id_initial, id_final, type_joueur = "gentil"){
+	$(id_initial).html('');
+	if(type_joueur==='gentil'){
+		$(id_final).removeClass('ok').html('<p><img class="image-personnage" src="images/gentil.jpg" alt="Gentil"></p>');
+	}
+	else {
+		$(id_final).removeClass('ok').html('<p><img class="image-personnage" src="images/mechant.jpg" alt="Méchant"></p>');
+	}
+	
+}
+
+positionToId = function(position){
+	return String(position.ligne*10+position.colonne+1);
+
+}
+
+
+
+
+
+
+
 
 
 /* Tests unitaires */
+$(document).ready(function(){
+
+	$("#case28").click(function(){
+		bougerIdJoueur('#case27', '#case29', 'mechant');
+		//$('#case27').html('');
+		//$('#case29').removeClass('ok').html('<p><img class="image-personnage" src="images/gentil.jpg" alt="Gentil"></p>');
+
+	});
+
+});
