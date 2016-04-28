@@ -152,7 +152,7 @@ donnerColonneFmNombre = function(nombre){
 
 //Fonction déplacer joueur
 
-bougerJoueurById = function(id_initial, id_final, type_joueur = "gentil"){
+bougerJoueurById = function(id_initial, id_final, type_joueur){
 	$(id_initial).html('');
 	if(type_joueur==='gentil'){
 		placerGentil(id_final);
