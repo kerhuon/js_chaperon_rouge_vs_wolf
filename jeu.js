@@ -143,6 +143,9 @@ fabriquerIdFromNumeroDeCase = function(nombre){
 
 donnerLigneFmId = function(id){
 	//TODO, s'appuie sur donnerLigneFmNombre
+	var nombre = parseInt(str.replace("case",""));
+	return donnerLigneFmNombre(nombre);
+
 }
 
 donnerColonneFmId = function(id){
@@ -150,6 +153,7 @@ donnerColonneFmId = function(id){
 }
 
 donnerLigneFmNombre = function(nombre){
+	// exemple : 90 ==> 8
 	if (nombre%10 === 0){
 		return Math.floor(nombre/10) - 1;
 	}
@@ -329,17 +333,19 @@ $(document).ready(function(){
 		restart();
 	});
 
-});
-/**************************************************** Gestion des évènements **************************************************/
-var reply_click = function()
-{
-    console.log(this.id);
-    
-};
+	var reply_click = function(){
+	console.log(this.id);
 
-for (var i = 1;i<=90;i++){
-  document.getElementById('case'+i).onclick = reply_click;
-}
+	    
+	};
+
+	for (var i = 1;i<=90;i++){
+	  document.getElementById('case'+i).onclick = reply_click;
+	}
+
+	});
+/**************************************************** Gestion des évènements **************************************************/
+
 
 
 
